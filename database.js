@@ -4,8 +4,8 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
     host     : '127.0.0.1',
-    user     : 'root',
-    password : 'root',
+    user     : 'liux',
+    password : 'liux',
     database : 'renmai'
 });
 
@@ -17,8 +17,4 @@ connection.connect(function(err) {
 
     console.log('connected as id ' + connection.threadId);
 });
-var data = {
-    name:'liux',
-    tel:'1333'
-}
 module.exports = connection;
