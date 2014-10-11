@@ -16,6 +16,7 @@ router.get('/add', function(req, res) {
 });
 router.get('/list', function(req, res) {
     var user = req.query.user || '';
+    console.log(user);
     connection.query('select * from user where host = ?',user, function(err, result) {
         if (err) throw err;
         var data = {
