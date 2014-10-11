@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	  <style type="text/css">
+
+	  </style>
+  </head>
+  <body>
+    <form action="#">
+
+	    <header>
+		    <h2><%= title %></h2>  <a href="/user/list?user=<%= user %>">列表</a>
+		    <div>This form breaks at 600px and goes from a left-label form to a top-label form. At above 1200px, the labels align right.</div>
+	    </header>
+	    <div>
+		    <label class="desc" id="title1" for="Field1">姓  名</label>
+		    <div>
+			    <input id="Field1" name="name" type="text" class="field text fn" value="" tabindex="1">
+		    </div>
+	    </div>
+	    <div>
+		    <label class="desc" id="title2" for="Field2">电  话</label>
+		    <div>
+			    <input id="Field2" name="tel" type="text" class="field text fn" value="" tabindex="2">
+		    </div>
+	    </div>
+
+	    <div>
+		    <label class="desc" id="title3" for="Field3">公司名称</label>
+		    <div>
+			    <input id="Field3" name="dep" type="text" class="field text fn" value="" tabindex="3">
+		    </div>
+	    </div>
+	    <div>
+		    <label class="desc" id="title4" for="Field4">职  位</label>
+		    <div>
+			    <input id="Field4" name="job" type="text" class="field text fn" value="" tabindex="4">
+		    </div>
+	    </div>
+
+
+	    <div>
+		    <label class="desc" id="title5" for="Field5">
+			    邮  箱
+		    </label>
+		    <div>
+			    <input id="Field5" name="email" type="text" spellcheck="false" value="" tabindex="5">
+		    </div>
+	    </div>
+
+	    <div>
+		    <label class="desc" id="title6" for="Field6">
+			    收件地址
+		    </label>
+		    <div>
+			    <input id="Field6" name="address" type="text" spellcheck="false" value="" tabindex="6">
+		    </div>
+	    </div>
+	    <div>
+		    <label class="desc" id="title3" for="Field3">
+			    微  信
+		    </label>
+		    <div>
+			    <input id="Field7" name="weixin" type="email" spellcheck="false" value="" tabindex="7">
+		    </div>
+	    </div>
+
+	    <div>
+		    <div>
+			    <input id="saveForm" name="saveForm" type="submit" value="Submit">
+		    </div>
+	    </div>
+    </form>
+	<div class="bottom">有任何问题  <a href="http://weibo.com/kissliux" target="_blank">@流星狂飙</a></div>
+  </body>
+</html>
